@@ -5,7 +5,7 @@ class Movie{
         this.rating=rating;
     }
     get PG(){
-        console.log()
+        return this.rating
     }
 }
 const movie1= new Movie ("leo","7screen","PG7");
@@ -14,6 +14,7 @@ const movie3=new Movie( "Casino Royale","Eon Productions","PG­13");
 console.log(movie1);
 console.log(movie2);
 console.log(movie3);
+console.log(movie1.PG);
 //-----------------------------------------------------------------------
 class Circle{
     constructor(radius,color){
