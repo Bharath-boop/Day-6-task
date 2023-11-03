@@ -14,7 +14,6 @@ const movie3=new Movie( "Casino Royale","Eon Productions","PG­13");
 console.log(movie1);
 console.log(movie2);
 console.log(movie3);
-console.log(movie1.PG);
 //-----------------------------------------------------------------------
 class Circle{
     constructor(radius,color){
@@ -72,18 +71,17 @@ console.log(person1);
 console.log(person2);
 //--------------------------------------------------------------------------
 class Ubar{
-    constructor(km){
-        this._km=km;
+    constructor(kelometer,price=50){
+        this.km=kelometer;
+        this.pr=price;
     }
-    get km(){
-        return this._km*50;
-    }
-    set km(km){
-        this._km=km
+    get price(){
+        return this.km* this.pr;
     }
 }
-const obj=new Ubar(5)
-console.log(obj.km)
-obj.km=3;
-console.log(obj.km)
+const ubar1=new Ubar(5);
+const ubar2=new Ubar(3,100);
+console.log(ubar1.price);
+console.log(ubar2.price);
+
 //----------------------------------------------------------------------------
